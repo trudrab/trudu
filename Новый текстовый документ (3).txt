@@ -1,0 +1,10 @@
+create table test(
+Idtest varchar(4) not null unique,
+name varchar(40) default 20,
+info varchar(30) not null,
+ primary key (info)
+ );
+
+
+select ID_ZAKAZ, NAMEMERP,DATAMEROP,STOIMARENZALA, m.id_blud , kolChel,famZak,TelZak,KolBl from
+zakaz  z ,  menu m  where (m.id_blud = z. id_blud)
